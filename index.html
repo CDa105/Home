@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="back"></div>
+<body>
+        <header>
+            <nav class="navigation">
+                <ul class="navigation dropdown-content" id="myDropdown">
+                    <li class="li_name"><a href="#" class="name">HOME CAKE</a></li>
+                    <li><a class="nav_link" href="#1">Главная</a></li>
+                    <li><a class="nav_link" href="#2">О нас</a></li>
+                    <li><a class="nav_link" href="#3">Каталог</a></li>
+                    <li><a class="nav_link" href="#4">Доставка</div></a></li>
+                    <li><a class="nav_link" href="#5">Контакты</a></li>
+                </ul>
+                <a href="#navi" id="pull" class="dropbtn" onclick="myFunction()"><div onclick="myFunction()" class="menu ">Menu</div></a> 
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </nav>
+            <div class="head_text" id="1">
+                <div class="h1">Домашние торты и <br> десерты</div>
+                <ul>
+                    <li class="li">Готовим вкусно</li>
+                    <li class="li">Доставляем быстро</li>
+                    <li class="li">Дорожим репутацией</li>
+                </ul>
+                <div class="button"><a type="button" class="nav_bottom" href="#3">Перейти в каталог</a></div>
+            </div>
+        </header>
+        <div class="main1" id="2">
+            <div class="max">
+                <div class="flex cont" id="flex">
+                    <div class="main1_text">
+                        <div class="red_text name2">HOME CAKE</div>
+                        <div class="rekomend">Делаем вашу жизнь слаще!</div>
+                        <div class="rekomend2">Особая рецептура всем известных и любимых десертов, приготовленных с теплотой и любовью. Домашние торты и десерты из натуральных ингредиентов на заказ в Нижнем Новгороде</div>
+                    </div>
+                    <div class="main1_img">
+                        <img src="img/1 сл.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main2 main" id="main3">
+            <div class="max" id="3">
+                <div class="new_reclama flex" id="flex">
+                    <div class="red_text rekomend3">Изготовим торт за три часа</div>
+                    <div class="reclama">Мы изготовим десерт с Вашим дизайном! Торты от 1 кг. Представленные торты на сайте так же можно изменять по весу и дизайну. Доставка от 250 руб.!</div>
+                </div>
+            </div>
+        </div>
+        <hr class="main2_full">
+        <div class="main2" id="main2">
+            <div class="max">
+                <div class="main2_catalog1 flex" id="flex">
+                    <div class="main2_content1">
+                        <img src="img/Бархат.jpg" alt="">
+                        <div class="tort">Торт «Красный бархат»</div>
+                        <div class="tort_opis">Десерт из броских красных коржей, с белоснежным кремом</div>
+                        <div class="rub">3150 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <hr class="hide">
+                    <div class="main2_content1">
+                        <img src="img/Свадебный.png" alt="" >
+                        <div class="tort">Торт «Свадебный»</div>
+                        <div class="tort_opis">Белый свадебный торт с красивыми цветами</div>
+                        <div class="rub">4300 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <hr class="hide">
+                    <div class="main2_content1">
+                        <img src="img/Лимонный.jpg" alt="">
+                        <div class="tort">Лимонный торт</div>
+                        <div class="tort_opis">Ароматный и сытный пирог с натуральным джемом</div>
+                        <div class="rub">2500 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main2_full">
+        <div class="main2">
+            <div class="max">
+                <div class="main2_catalog2 flex" id="flex">
+                    <div class="main2_content1">
+                        <img src="img/Пирог.jpg" alt="">
+                        <div class="tort">Пирог с джемом</div>
+                        <div class="tort_opis">Ароматный и сытный пирог с натуральным клубничным и ежевичным джемом</div>
+                        <div class="rub">2500 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <hr class="hide">
+                    <div class="main2_content1">
+                        <img src="img/Сметанник.jpg" alt="">
+                        <div class="tort">Торт «Сметанник»</div>
+                        <div class="tort_opis">Классический домашний торт на основе натуральной фермерской сметаны</div>
+                        <div class="rub">1500 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <hr class="hide">
+                    <div class="main2_content1">
+                        <img src="img/Круассаны.jpg" alt="">
+                        <div class="tort">Круассаны</div>
+                        <div class="tort_opis">Воздушное французское лакомство с нежной начинкой на ваш выбор</div>
+                        <div class="rub">2200 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a id="pokaz" href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main2_full">
+        <div class="main2 ">
+            <div class="max">
+                <div class="main2_catalog2_hidden main2_catalog2 flex" id="main2_catalog2_hidden">
+                    <div class="main2_content1">
+                        <img src="img/dop1.jpg" alt="">
+                        <div class="tort">Торт «Романтика»</div>
+                        <div class="tort_opis">Топленый белый шоколад, начинка из вишни с добавлением красного «Кайенского» перца.</div>
+                        <div class="rub">3200 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="main2_content1">
+                        <img src="img/op2.jpg" alt="">
+                        <div class="tort">Торт «Черничный бархат»</div>
+                        <div class="tort_opis"> «Чёрный бархат» — отличный вариант для официального праздника</div>
+                        <div class="rub">2800 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="main2_content1">
+                        <img src="img/dop3.jpg" alt="">
+                        <div class="tort">Торт «Ночная клубничка»</div>
+                        <div class="tort_opis">Нежнейший бисквит, начинка из джема из клубники и украшение из джема из киви.</div>
+                        <div class="rub">3600 руб.</div>
+                        <div class="main2_botton">
+                            <div class="button_main2"><a href="#" type="button" class="nav_bottom_main2">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                </div>
+                <hr id="main2_catalog2_hidden" class="main2_full">
+                <div class="button_main2 right main2_buttom"><a href="#main2_catalog2_hidden" type="button" class="nav_bottom_main2 right">Показать больше</a></div>
+                
+            </div>
+        </div>
+        <div class="main3">
+            <div class="max">
+                <div class="flex main3_flex" id="flex">
+                    <div class="main3_content1">
+                        <img src="img/кач-во.png" alt="">
+                        <div class="text_main3">Мы используем только свежие и натуральные продукты
+                        </div>
+                    </div>
+                    <div class="main3_content1">
+                        <img src="img/день рождения.png" alt="">
+                        <div class="text_main3">У вас день рождения? — Получите десерт в подарок!
+                        </div>
+                    </div>
+                    <div class="main3_content1">
+                        <img src="img/доставка.png" alt="">
+                        <div class="text_main3">Быстрая доставка по Нижнему Новгороду
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main4">
+            <div class="max">
+                <div class="main4_name">Акции и подарки от</div>
+                <a href="#" class="red_text main4_name home">HOME CAKE</a>
+                <div class="flex cont" id="flex">
+                    <div class="img" id="a">
+                        <img src="img/подарок 1.png" alt="">
+                    </div>
+                    <div class="text" id="b">
+                        <div class="prize">Десерт в подарок к торту</div>
+                        <div class="vopros">Заказали торт на день рождения себе или близким?</div>
+                        <div class="opisanie">Получите в подарок сладкий комплимент от HOME CAKE. Подарочные десерты в специальной упаковке — пирожные, кексы, пончики, макаруны на ваш выбор.</div>
+                        <div class="dopol">Наши десерты созданы для того, чтобы дарить наслаждение! Количество десертов: 5 штук</div>
+                        <div class="main4_botton">
+                            <a type="button" class="main4_botton_nav" href="#">Заказать торт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex cont" id="flex">
+                    <div class="img" id="a">
+                        <img src="img/nодарок 2.png" alt="">
+                    </div>
+                    <div class="text" id="b">
+                        <div class="prize">Торт «Черничный» в подарок при первом заказе</div>
+                        <div class="vopros">Вы впервые делаете заказ?</div>
+                        <div class="opisanie">Приезжайте к нам, и мы бесплатно угостим вас тортом или нежнейшими десертами. Закажите доставку любого десерта, и мы подарим кусочек торта «Черничный».</div>
+                        <div class="dopol">Звоните, заказывайте, наслаждайтесь вкуснейшими лакомствами от HOME CAKE!</div>
+                        <div class="main4_botton" ><a href="#" type="button" class="main4_botton_nav">Заказать торт</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main5" id="4">
+            <div class="max">
+                <div class="main5_text flex">Удобная  <p class="red_text otstup"> оплата</p></div>
+            <div class="main5_text flex">и быстрая <p class="red_text otstup">доставка</p></div>
+            <div class="flex cont" id="flex">
+                <div class="main5_content1">
+                    <img src="img/оплата.png" alt="">
+                    <div class="main5_name">Оплата</div>
+                    <div class="main5_txt">Наличными курьеру при получении. <br>
+                        Банковской картой при оформлении заказа на сайте. <br>
+                        Возврат денежных средств по онлайн-заказам, оплаченным картой, производится обратно на карту.</div>
+                </div>
+                <div class="main5_content1">
+                    <img src="img/пакет.png" alt="">
+                    <div class="main5_name">Доставка</div>
+                    <div class="main5_txt">Доставим ваш заказ в течение 1 дня. <br>
+                        Торты и десерты доставляются в фирменной упаковке. <br>
+                        Вы можете самостоятельно забрать заказ по адресу: Нижний Новгород Московское ш. 146А</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="main6">
+            <div class="max">
+                <div class="flex" id="flex">
+                    <div class="main6_text">Индивидуальный заказ в <div class="red_text red_home"> Home Cake</div></div>
+                    <div class="main6_text2">В Home Cake вы можете заказать индивидуальные торты и другие кондитерские изделия на любые праздничные мероприятия</div>
+                </div>
+                <div class="flex placeholder" id="flex">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="+7(912)345-67-89">
+                    <input type="text" placeholder="Сообщение">
+                    <div class="main6_botton">
+                        <a href="#" type="buttom" class="main6_buttom_a">Отправить</a>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="checkbox"><input type="checkbox" id="lab"><label for="lab" class="flex check">Я согласен на обработку <a href="#" class="red_text otstup"> персональных данных </a> и с условиями <a href="#" class="red_text otstup">пользовательского соглашения</a></label></div>
+                
+            </div>
+        </div>
+        <footer id="5">
+            <div class="max">
+                <div class="contact">Контактная информация</div>
+            <div class="flex footer_content" id="flex">
+                <div class="flex foot">
+                    <a href="#"><img src="img/телефон.png" alt=""></a>
+                    <div>+7(912)345-67-89</div>
+                </div>
+                <div class="flex foot">
+                    <a href="https://www.google.com/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5+%D1%88.,+146,+%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9+%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4,+%D0%9D%D0%B8%D0%B6%D0%B5%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+603028/@56.3130549,43.8646875,15z/data=!3m1!4b1!4m5!3m4!1s0x414e29e2dbe92579:0x35ce49dc1d3b9361!8m2!3d56.3130552!4d43.8734423?hl=ru"><img src="img/гео.png" alt=""></a>
+                    <div>Московское ш. 146А</div>
+                </div>
+                <div class="flex foot">
+                    <a href="mailto:homecake@yandex.ru"><img src="img/мессенджер.png" alt=""></a>
+                    <div>homecake@yandex.ru</div>
+                </div>
+            </div>
+            <div class="flex message">
+                <a href="https://vk.com/aassst"><img src="img/вк.png" alt=""></a>
+                <a href="https://vk.com/aassst"><img src="img/телега.png" alt=""></a>
+                <a href="https://vk.com/aassst"><img src="img/твиттер.png" alt=""></a>
+            </div>
+            <hr class="hr_footer">
+            <div class="end"><img src="img/logo.png" alt=""></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
